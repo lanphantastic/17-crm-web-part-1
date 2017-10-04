@@ -1,6 +1,7 @@
 require_relative 'contact'
 require 'sinatra'
 
+# Home page
 get '/' do
   erb :index
 end
@@ -13,6 +14,10 @@ end
 
 get '/about' do
   erb :about
+end
+
+get '/contacts/:id' do
+  # instructions for how to handle requests to this route will go here
 end
 
 
