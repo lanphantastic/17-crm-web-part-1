@@ -18,6 +18,7 @@ end
 
 get '/contacts/:id' do
   # instructions for how to handle requests to this route will go here
+  erb :show_contact
 end
 
 
