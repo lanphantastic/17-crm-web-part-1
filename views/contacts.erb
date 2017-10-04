@@ -1,6 +1,13 @@
 <div class="total_num_of_contact">
 
-  <p>There are <span class="count-number"><%= @all_contacts.count %></span> contacts</p>
+  <p>There are
+
+    <!-- number count -->
+    <span class="count-number">
+      <%= @all_contacts.count %>
+    </span> contacts
+
+  </p>
 
 </div>
 
@@ -9,8 +16,10 @@
 
   <li>
 
+    <!-- Name and email -->
     <h2><%= contact.full_name %> (<%= contact.email %>)</h2>
 
+    <!-- link -->
     <div class="edit-delete">
       <a href="/contacts/<%= contact.id %>">Edit</a> |
       <a href="#">Delete</a>
@@ -19,5 +28,5 @@
   </li>
 
   <% end %>
-  
+
 </ul>
