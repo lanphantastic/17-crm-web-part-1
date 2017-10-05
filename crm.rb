@@ -1,6 +1,7 @@
 require_relative 'contact'
 require 'sinatra'
-
+# require 'pry'
+# binding.pry
 # Home page
 get '/' do
   erb :index

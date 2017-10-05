@@ -9,5 +9,17 @@
   </div>
 
 </div>
+<div class="edit-contact">
+  <form action='/contacts/<%= @contact.id %>' method='post'>
+    <input type='hidden' name='_method' value='put'>
+    <input type='submit' value='Edit Contact'>
+  </form>
+</div>
 
+<div class="delete-container">
+  <form action='/contacts/<%= @contact.id %>' method='post'>
+    <input type='hidden' name='_method' value='put'>
+    <input type='submit' value='Delete Contact'>
+  </form>
+</div>
 <!-- TIPS: Always have a content box inside a container box -->
