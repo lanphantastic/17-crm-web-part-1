@@ -80,6 +80,10 @@ main {
   padding: 20px 25px;
 }
 
+.main-contact-list ul a:link{
+  text-decoration: none;
+}
+
 footer {
   color: white;
   background-color: black;
