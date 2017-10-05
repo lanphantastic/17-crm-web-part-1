@@ -16,6 +16,11 @@ get '/about' do
   erb :about
 end
 
+
+get '/contacts/new' do
+  erb :new
+end
+
 get '/contacts/:id' do
   # instructions for how to handle requests to this route will go here
   # params[:id] contains the id from the URL
@@ -29,6 +34,7 @@ get '/contacts/:id' do
   end
 
 end
+
 
 
 after do
